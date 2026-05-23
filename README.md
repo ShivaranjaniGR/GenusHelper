@@ -122,12 +122,17 @@ The top-level script runs the complete flow:
 ## REPORT PARSING AND TABULATION, FOLLOWED BY CREATING HTML DASHBOARD
 <img width="937" height="717" alt="image" src="https://github.com/user-attachments/assets/2a7fd893-7321-43e8-a0cc-48900aced7cc" />
 
+
+
+
 --------------
 # DOWLOADING THE DASHBOARD
 
 <img width="773" height="295" alt="image" src="https://github.com/user-attachments/assets/610c32b5-df8b-4ff6-956c-46b65e34883e" />
 
 <img width="1918" height="1137" alt="image" src="https://github.com/user-attachments/assets/78308249-db12-4b33-8914-dd923958440d" />
+
+<img width="1911" height="943" alt="image" src="https://github.com/user-attachments/assets/74765232-271f-4d54-b091-f51f002518d3" />
 
 ---------------
 
