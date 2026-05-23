@@ -1,0 +1,12 @@
+set CLK_PERIOD 10.000
+
+######## CLOCK ########
+create_clock -name clk -period $CLK_PERIOD -waveform "0 [expr $CLK_PERIOD/2]" [get_ports clk]
+
+######## CLOCK UNCERTAINTY ########
+set_clock_uncertainty -setup 0.00 [get_clocks clk]
+set_clock_uncertainty -hold  0.00 [get_clocks clk]
+
+######## CLOCK SOURCE LATENCY ########
+set_clock_latency -source -max 1.25 [get_clocks clk]
+set_clock_latency -source -min 0.75 [get_clocks clk]
