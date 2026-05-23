@@ -1,0 +1,4 @@
+case_name,frequency_mhz,setup_uncertainty_ns,hold_uncertainty_ns,source_latency_max_ns,source_latency_min_ns
+relaxed_100MHz,100,0.00,0.00,1.25,0.75
+nominal_200MHz,200,0.05,0.02,1.25,0.75
+aggressive_300MHz,300,0.10,0.05,1.25,0.75

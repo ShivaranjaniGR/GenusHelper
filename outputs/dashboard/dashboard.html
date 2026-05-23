@@ -1,0 +1,613 @@
+
+<html>
+<head>
+<title>Genus QoR Dashboard</title>
+
+<style>
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f6f8;
+    padding: 30px;
+    color: #222;
+}
+
+h1 {
+    margin-bottom: 5px;
+}
+
+.subtitle {
+    color: #555;
+    margin-bottom: 25px;
+}
+
+.card {
+    background: white;
+    padding: 22px;
+    margin-bottom: 24px;
+    border-radius: 14px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.summary-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+}
+
+.summary-box {
+    background: #f9fafb;
+    padding: 16px;
+    border-radius: 12px;
+    border-left: 5px solid #2563eb;
+}
+
+.summary-box h3 {
+    margin: 0;
+    font-size: 16px;
+    color: #374151;
+}
+
+.summary-box p {
+    margin: 8px 0 0 0;
+    font-size: 14px;
+}
+
+.chart {
+    width: 100%;
+}
+
+.bar-row {
+    display: flex;
+    align-items: center;
+    margin: 12px 0;
+}
+
+.bar-label {
+    width: 270px;
+    font-size: 13px;
+    font-weight: bold;
+    word-break: break-word;
+}
+
+.bar-wrap {
+    flex: 1;
+    background: #e5e7eb;
+    height: 24px;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.bar {
+    height: 100%;
+    background: #2563eb;
+    border-radius: 12px;
+}
+
+.bar-value {
+    width: 120px;
+    text-align: right;
+    font-size: 13px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    background: white;
+    font-size: 13px;
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: center;
+}
+
+th {
+    background: #111827;
+    color: white;
+}
+
+.pass {
+    color: green;
+    font-weight: bold;
+}
+
+.fail {
+    color: red;
+    font-weight: bold;
+}
+</style>
+</head>
+
+<body>
+
+<h1>Genus QoR Dashboard</h1>
+<p class="subtitle">Automatic visual summary of timing, area, and power results.</p>
+
+<div class="card">
+<h2>Best Results</h2>
+
+<div class="summary-grid">
+    <div class="summary-box">
+        <h3>Best Timing</h3>
+        <p>SPI_Master_1_relaxed_100MHz</p>
+        <p><b>WNS:</b> 9.408 ns</p>
+    </div>
+
+    <div class="summary-box">
+        <h3>Lowest Area</h3>
+        <p>SPI_Master_1_nominal_200MHz</p>
+        <p><b>Area:</b> 475.56</p>
+    </div>
+
+    <div class="summary-box">
+        <h3>Lowest Power</h3>
+        <p>SPI_Master_1_relaxed_100MHz</p>
+        <p><b>Power:</b> 4.34129e-05 W</p>
+    </div>
+</div>
+</div>
+
+<div class="card">
+<h2>WNS Comparison</h2><div class="chart">
+        <div class="bar-row">
+            <div class="bar-label">SPI_Master_1_aggressive_300MHz</div>
+            <div class="bar-wrap">
+                <div class="bar" style="width:28.241921768707485%"></div>
+            </div>
+            <div class="bar-value">2.657 ns</div>
+        </div>
+        
+        <div class="bar-row">
+            <div class="bar-label">SPI_Master_1_nominal_200MHz</div>
+            <div class="bar-wrap">
+                <div class="bar" style="width:46.322278911564624%"></div>
+            </div>
+            <div class="bar-value">4.358 ns</div>
+        </div>
+        
+        <div class="bar-row">
+            <div class="bar-label">SPI_Master_1_relaxed_100MHz</div>
+            <div class="bar-wrap">
+                <div class="bar" style="width:100.0%"></div>
+            </div>
+            <div class="bar-value">9.408 ns</div>
+        </div>
+        
+        <div class="bar-row">
+            <div class="bar-label">spi_master_2_aggressive_300MHz</div>
+            <div class="bar-wrap">
+                <div class="bar" style="width:26.679421768707485%"></div>
+            </div>
+            <div class="bar-value">2.51 ns</div>
+        </div>
+        
+        <div class="bar-row">
+            <div class="bar-label">spi_master_2_nominal_200MHz</div>
+            <div class="bar-wrap">
+                <div class="bar" style="width:44.83418367346939%"></div>
+            </div>
+            <div class="bar-value">4.218 ns</div>
+        </div>
+        
+        <div class="bar-row">
+            <div class="bar-label">spi_master_2_relaxed_100MHz</div>
+            <div class="bar-wrap">
+                <div class="bar" style="width:98.51190476190477%"></div>
+            </div>
+            <div class="bar-value">9.268 ns</div>
+        </div>
+        
+        <div class="bar-row">
+            <div class="bar-label">spi_master_aggressive_300MHz</div>
+            <div class="bar-wrap">
+                <div class="bar" style="width:25.999149659863953%"></div>
+            </div>
+            <div class="bar-value">2.446 ns</div>
+        </div>
+        
+        <div class="bar-row">
+            <div class="bar-label">spi_master_nominal_200MHz</div>
+            <div class="bar-wrap">
+                <div class="bar" style="width:44.06887755102041%"></div>
+            </div>
+            <div class="bar-value">4.146 ns</div>
+        </div>
+        
+        <div class="bar-row">
+            <div class="bar-label">spi_master_relaxed_100MHz</div>
+            <div class="bar-wrap">
+                <div class="bar" style="width:97.74659863945578%"></div>
+            </div>
+            <div class="bar-value">9.196 ns</div>
+        </div>
+        </div>
+</div>
+
+<div class="card">
+<h2>Area Comparison</h2><div class="chart">
+        <div class="bar-row">
+            <div class="bar-label">SPI_Master_1_aggressive_300MHz</div>
+            <div class="bar-wrap">
+                <div class="bar" style="width:38.72477332553378%"></div>
+            </div>
+            <div class="bar-value">476.64 </div>
+        </div>
+        
+        <div class="bar-row">
+            <div class="bar-label">SPI_Master_1_nominal_200MHz</div>
+            <div class="bar-wrap">
+                <div class="bar" style="width:38.63702837086868%"></div>
+            </div>
+            <div class="bar-value">475.56 </div>
+        </div>
+        
+        <div class="bar-row">
+            <div class="bar-label">SPI_Master_1_relaxed_100MHz</div>
+            <div class="bar-wrap">
+                <div class="bar" style="width:38.63702837086868%"></div>
+            </div>
+            <div class="bar-value">475.56 </div>
+        </div>
+        
+        <div class="bar-row">
+            <div class="bar-label">spi_master_2_aggressive_300MHz</div>
+            <div class="bar-wrap">
+                <div class="bar" style="width:46.91430242761042%"></div>
+            </div>
+            <div class="bar-value">577.44 </div>
+        </div>
+        
+        <div class="bar-row">
+            <div class="bar-label">spi_master_2_nominal_200MHz</div>
+            <div class="bar-wrap">
+                <div class="bar" style="width:46.82655747294531%"></div>
+            </div>
+            <div class="bar-value">576.36 </div>
+        </div>
+        
+        <div class="bar-row">
+            <div class="bar-label">spi_master_2_relaxed_100MHz</div>
+            <div class="bar-wrap">
+                <div class="bar" style="width:46.82655747294531%"></div>
+            </div>
+            <div class="bar-value">576.36 </div>
+        </div>
+        
+        <div class="bar-row">
+            <div class="bar-label">spi_master_aggressive_300MHz</div>
+            <div class="bar-wrap">
+                <div class="bar" style="width:100.0%"></div>
+            </div>
+            <div class="bar-value">1230.84 </div>
+        </div>
+        
+        <div class="bar-row">
+            <div class="bar-label">spi_master_nominal_200MHz</div>
+            <div class="bar-wrap">
+                <div class="bar" style="width:99.88300672711321%"></div>
+            </div>
+            <div class="bar-value">1229.4 </div>
+        </div>
+        
+        <div class="bar-row">
+            <div class="bar-label">spi_master_relaxed_100MHz</div>
+            <div class="bar-wrap">
+                <div class="bar" style="width:99.88300672711321%"></div>
+            </div>
+            <div class="bar-value">1229.4 </div>
+        </div>
+        </div>
+</div>
+
+<div class="card">
+<h2>Cell Count Comparison</h2><div class="chart">
+        <div class="bar-row">
+            <div class="bar-label">SPI_Master_1_aggressive_300MHz</div>
+            <div class="bar-wrap">
+                <div class="bar" style="width:42.96875%"></div>
+            </div>
+            <div class="bar-value">110 </div>
+        </div>
+        
+        <div class="bar-row">
+            <div class="bar-label">SPI_Master_1_nominal_200MHz</div>
+            <div class="bar-wrap">
+                <div class="bar" style="width:41.796875%"></div>
+            </div>
+            <div class="bar-value">107 </div>
+        </div>
+        
+        <div class="bar-row">
+            <div class="bar-label">SPI_Master_1_relaxed_100MHz</div>
+            <div class="bar-wrap">
+                <div class="bar" style="width:41.796875%"></div>
+            </div>
+            <div class="bar-value">107 </div>
+        </div>
+        
+        <div class="bar-row">
+            <div class="bar-label">spi_master_2_aggressive_300MHz</div>
+            <div class="bar-wrap">
+                <div class="bar" style="width:46.09375%"></div>
+            </div>
+            <div class="bar-value">118 </div>
+        </div>
+        
+        <div class="bar-row">
+            <div class="bar-label">spi_master_2_nominal_200MHz</div>
+            <div class="bar-wrap">
+                <div class="bar" style="width:46.09375%"></div>
+            </div>
+            <div class="bar-value">118 </div>
+        </div>
+        
+        <div class="bar-row">
+            <div class="bar-label">spi_master_2_relaxed_100MHz</div>
+            <div class="bar-wrap">
+                <div class="bar" style="width:46.09375%"></div>
+            </div>
+            <div class="bar-value">118 </div>
+        </div>
+        
+        <div class="bar-row">
+            <div class="bar-label">spi_master_aggressive_300MHz</div>
+            <div class="bar-wrap">
+                <div class="bar" style="width:100.0%"></div>
+            </div>
+            <div class="bar-value">256 </div>
+        </div>
+        
+        <div class="bar-row">
+            <div class="bar-label">spi_master_nominal_200MHz</div>
+            <div class="bar-wrap">
+                <div class="bar" style="width:97.65625%"></div>
+            </div>
+            <div class="bar-value">250 </div>
+        </div>
+        
+        <div class="bar-row">
+            <div class="bar-label">spi_master_relaxed_100MHz</div>
+            <div class="bar-wrap">
+                <div class="bar" style="width:97.65625%"></div>
+            </div>
+            <div class="bar-value">250 </div>
+        </div>
+        </div>
+</div>
+
+<div class="card">
+<h2>Dynamic Power Comparison</h2><div class="chart">
+        <div class="bar-row">
+            <div class="bar-label">SPI_Master_1_aggressive_300MHz</div>
+            <div class="bar-wrap">
+                <div class="bar" style="width:85.44377244753667%"></div>
+            </div>
+            <div class="bar-value">0.000128703 W</div>
+        </div>
+        
+        <div class="bar-row">
+            <div class="bar-label">SPI_Master_1_nominal_200MHz</div>
+            <div class="bar-wrap">
+                <div class="bar" style="width:57.09615014373062%"></div>
+            </div>
+            <div class="bar-value">8.60034e-05 W</div>
+        </div>
+        
+        <div class="bar-row">
+            <div class="bar-label">SPI_Master_1_relaxed_100MHz</div>
+            <div class="bar-wrap">
+                <div class="bar" style="width:28.548108266004558%"></div>
+            </div>
+            <div class="bar-value">4.30017e-05 W</div>
+        </div>
+        
+        <div class="bar-row">
+            <div class="bar-label">spi_master_2_aggressive_300MHz</div>
+            <div class="bar-wrap">
+                <div class="bar" style="width:98.0087499751044%"></div>
+            </div>
+            <div class="bar-value">0.00014763 W</div>
+        </div>
+        
+        <div class="bar-row">
+            <div class="bar-label">spi_master_2_nominal_200MHz</div>
+            <div class="bar-wrap">
+                <div class="bar" style="width:65.56983051072503%"></div>
+            </div>
+            <div class="bar-value">9.87672e-05 W</div>
+        </div>
+        
+        <div class="bar-row">
+            <div class="bar-label">spi_master_2_relaxed_100MHz</div>
+            <div class="bar-wrap">
+                <div class="bar" style="width:32.78488206122327%"></div>
+            </div>
+            <div class="bar-value">4.93835e-05 W</div>
+        </div>
+        
+        <div class="bar-row">
+            <div class="bar-label">spi_master_aggressive_300MHz</div>
+            <div class="bar-wrap">
+                <div class="bar" style="width:100.0%"></div>
+            </div>
+            <div class="bar-value">0.000150629 W</div>
+        </div>
+        
+        <div class="bar-row">
+            <div class="bar-label">spi_master_nominal_200MHz</div>
+            <div class="bar-wrap">
+                <div class="bar" style="width:66.73562195858699%"></div>
+            </div>
+            <div class="bar-value">0.000100523 W</div>
+        </div>
+        
+        <div class="bar-row">
+            <div class="bar-label">spi_master_relaxed_100MHz</div>
+            <div class="bar-wrap">
+                <div class="bar" style="width:33.36785745108843%"></div>
+            </div>
+            <div class="bar-value">5.02617e-05 W</div>
+        </div>
+        </div>
+</div>
+
+<div class="card">
+<h2>Leakage Power Comparison</h2><div class="chart">
+        <div class="bar-row">
+            <div class="bar-label">SPI_Master_1_aggressive_300MHz</div>
+            <div class="bar-wrap">
+                <div class="bar" style="width:44.80114806021697%"></div>
+            </div>
+            <div class="bar-value">4.14584e-07 W</div>
+        </div>
+        
+        <div class="bar-row">
+            <div class="bar-label">SPI_Master_1_nominal_200MHz</div>
+            <div class="bar-wrap">
+                <div class="bar" style="width:44.43848897812483%"></div>
+            </div>
+            <div class="bar-value">4.11228e-07 W</div>
+        </div>
+        
+        <div class="bar-row">
+            <div class="bar-label">SPI_Master_1_relaxed_100MHz</div>
+            <div class="bar-wrap">
+                <div class="bar" style="width:44.43848897812483%"></div>
+            </div>
+            <div class="bar-value">4.11228e-07 W</div>
+        </div>
+        
+        <div class="bar-row">
+            <div class="bar-label">spi_master_2_aggressive_300MHz</div>
+            <div class="bar-wrap">
+                <div class="bar" style="width:53.63031899086545%"></div>
+            </div>
+            <div class="bar-value">4.96288e-07 W</div>
+        </div>
+        
+        <div class="bar-row">
+            <div class="bar-label">spi_master_2_nominal_200MHz</div>
+            <div class="bar-wrap">
+                <div class="bar" style="width:52.90737821041359%"></div>
+            </div>
+            <div class="bar-value">4.89598e-07 W</div>
+        </div>
+        
+        <div class="bar-row">
+            <div class="bar-label">spi_master_2_relaxed_100MHz</div>
+            <div class="bar-wrap">
+                <div class="bar" style="width:52.90737821041359%"></div>
+            </div>
+            <div class="bar-value">4.89598e-07 W</div>
+        </div>
+        
+        <div class="bar-row">
+            <div class="bar-label">spi_master_aggressive_300MHz</div>
+            <div class="bar-wrap">
+                <div class="bar" style="width:100.0%"></div>
+            </div>
+            <div class="bar-value">9.25387e-07 W</div>
+        </div>
+        
+        <div class="bar-row">
+            <div class="bar-label">spi_master_nominal_200MHz</div>
+            <div class="bar-wrap">
+                <div class="bar" style="width:98.55822482917958%"></div>
+            </div>
+            <div class="bar-value">9.12045e-07 W</div>
+        </div>
+        
+        <div class="bar-row">
+            <div class="bar-label">spi_master_relaxed_100MHz</div>
+            <div class="bar-wrap">
+                <div class="bar" style="width:98.55822482917958%"></div>
+            </div>
+            <div class="bar-value">9.12045e-07 W</div>
+        </div>
+        </div>
+</div>
+
+<div class="card">
+<h2>Total Power Comparison</h2><div class="chart">
+        <div class="bar-row">
+            <div class="bar-label">SPI_Master_1_aggressive_300MHz</div>
+            <div class="bar-wrap">
+                <div class="bar" style="width:85.19547359044573%"></div>
+            </div>
+            <div class="bar-value">0.000129118 W</div>
+        </div>
+        
+        <div class="bar-row">
+            <div class="bar-label">SPI_Master_1_nominal_200MHz</div>
+            <div class="bar-wrap">
+                <div class="bar" style="width:57.01864009765433%"></div>
+            </div>
+            <div class="bar-value">8.64146e-05 W</div>
+        </div>
+        
+        <div class="bar-row">
+            <div class="bar-label">SPI_Master_1_relaxed_100MHz</div>
+            <div class="bar-wrap">
+                <div class="bar" style="width:28.64498037016265%"></div>
+            </div>
+            <div class="bar-value">4.34129e-05 W</div>
+        </div>
+        
+        <div class="bar-row">
+            <div class="bar-label">spi_master_2_aggressive_300MHz</div>
+            <div class="bar-wrap">
+                <div class="bar" style="width:97.73745504932204%"></div>
+            </div>
+            <div class="bar-value">0.000148126 W</div>
+        </div>
+        
+        <div class="bar-row">
+            <div class="bar-label">spi_master_2_nominal_200MHz</div>
+            <div class="bar-wrap">
+                <div class="bar" style="width:65.49226353469038%"></div>
+            </div>
+            <div class="bar-value">9.92568e-05 W</div>
+        </div>
+        
+        <div class="bar-row">
+            <div class="bar-label">spi_master_2_relaxed_100MHz</div>
+            <div class="bar-wrap">
+                <div class="bar" style="width:32.90765728613375%"></div>
+            </div>
+            <div class="bar-value">4.98732e-05 W</div>
+        </div>
+        
+        <div class="bar-row">
+            <div class="bar-label">spi_master_aggressive_300MHz</div>
+            <div class="bar-wrap">
+                <div class="bar" style="width:100.0%"></div>
+            </div>
+            <div class="bar-value">0.000151555 W</div>
+        </div>
+        
+        <div class="bar-row">
+            <div class="bar-label">spi_master_nominal_200MHz</div>
+            <div class="bar-wrap">
+                <div class="bar" style="width:66.92949754214641%"></div>
+            </div>
+            <div class="bar-value">0.000101435 W</div>
+        </div>
+        
+        <div class="bar-row">
+            <div class="bar-label">spi_master_relaxed_100MHz</div>
+            <div class="bar-wrap">
+                <div class="bar" style="width:33.765761604697964%"></div>
+            </div>
+            <div class="bar-value">5.11737e-05 W</div>
+        </div>
+        </div>
+</div>
+
+<div class="card">
+<h2>Full QoR Table</h2>
+<table><tr><th>run_name</th><th>wns_ns</th><th>timing_status</th><th>final_status</th><th>cell_count</th><th>cell_area</th><th>total_area</th><th>leakage_power_W</th><th>internal_power_W</th><th>switching_power_W</th><th>dynamic_power_W</th><th>total_power_W</th></tr><tr><td>SPI_Master_1_aggressive_300MHz</td><td>2.657</td><td>MET</td><td class="pass">PASS</td><td>110</td><td>476.64</td><td>476.64</td><td>4.14584e-07</td><td>0.000117973</td><td>1.07301e-05</td><td>0.0001287031</td><td>0.000129118</td></tr><tr><td>SPI_Master_1_nominal_200MHz</td><td>4.358</td><td>MET</td><td class="pass">PASS</td><td>107</td><td>475.56</td><td>475.56</td><td>4.11228e-07</td><td>7.88047e-05</td><td>7.19866e-06</td><td>8.600336e-05</td><td>8.64146e-05</td></tr><tr><td>SPI_Master_1_relaxed_100MHz</td><td>9.408</td><td>MET</td><td class="pass">PASS</td><td>107</td><td>475.56</td><td>475.56</td><td>4.11228e-07</td><td>3.94024e-05</td><td>3.59933e-06</td><td>4.300173e-05</td><td>4.34129e-05</td></tr><tr><td>spi_master_2_aggressive_300MHz</td><td>2.51</td><td>MET</td><td class="pass">PASS</td><td>118</td><td>577.44</td><td>577.44</td><td>4.96288e-07</td><td>0.000137956</td><td>9.6736e-06</td><td>0.0001476296</td><td>0.000148126</td></tr><tr><td>spi_master_2_nominal_200MHz</td><td>4.218</td><td>MET</td><td class="pass">PASS</td><td>118</td><td>576.36</td><td>576.36</td><td>4.89598e-07</td><td>9.22491e-05</td><td>6.51808e-06</td><td>9.876718e-05</td><td>9.92568e-05</td></tr><tr><td>spi_master_2_relaxed_100MHz</td><td>9.268</td><td>MET</td><td class="pass">PASS</td><td>118</td><td>576.36</td><td>576.36</td><td>4.89598e-07</td><td>4.61245e-05</td><td>3.25904e-06</td><td>4.938354e-05</td><td>4.98732e-05</td></tr><tr><td>spi_master_aggressive_300MHz</td><td>2.446</td><td>MET</td><td class="pass">PASS</td><td>256</td><td>1230.84</td><td>1230.84</td><td>9.25387e-07</td><td>0.000134508</td><td>1.6121e-05</td><td>0.000150629</td><td>0.000151555</td></tr><tr><td>spi_master_nominal_200MHz</td><td>4.146</td><td>MET</td><td class="pass">PASS</td><td>250</td><td>1229.4</td><td>1229.4</td><td>9.12045e-07</td><td>8.84127e-05</td><td>1.21105e-05</td><td>0.0001005232</td><td>0.000101435</td></tr><tr><td>spi_master_relaxed_100MHz</td><td>9.196</td><td>MET</td><td class="pass">PASS</td><td>250</td><td>1229.4</td><td>1229.4</td><td>9.12045e-07</td><td>4.42064e-05</td><td>6.05527e-06</td><td>5.026167e-05</td><td>5.11737e-05</td></tr></table>
+</div>
+
+</body>
+</html>

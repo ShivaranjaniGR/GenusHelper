@@ -1,0 +1,4 @@
+variant_name,rtl_path,top_module,clock_port
+SPI_Master_1,/home/userdata/22bec0985/GenusHelper/rtl_source/SPI_Master_1.v,SPI_Master_1,i_Clk
+spi_master,/home/userdata/22bec0985/GenusHelper/rtl_source/spi_master.v,spi_master,clk
+spi_master_2,/home/userdata/22bec0985/GenusHelper/rtl_source/spi_master_2.v,spi_master_2,clk

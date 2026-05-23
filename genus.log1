@@ -1,0 +1,71 @@
+Cadence Genus(TM) Synthesis Solution.
+Copyright 2022 Cadence Design Systems, Inc. All rights reserved worldwide.
+Cadence and the Cadence logo are registered trademarks and Genus is a trademark
+of Cadence Design Systems, Inc. in the United States and other countries.
+
+[00:43:49.400289] Configured Lic search path (21.01-s002): 5280@10.110.5.59
+
+Version: 21.14-s082_1, built Thu Jun 23 02:02:08 PDT 2022
+Options: 
+Date:    Sat May 23 00:43:49 2026
+Host:    cadence-server.vit.ac.in (x86_64 w/Linux 4.18.0-477.21.1.el8_8.x86_64) (16cores*32cpus*1physical cpu*Intel(R) Xeon(R) Gold 6346 CPU @ 3.10GHz 36864KB) (1055760632KB)
+PID:     1004891
+OS:      Red Hat Enterprise Linux release 8.8 (Ootpa)
+
+
+[00:43:49.502690] Periodic Lic check successful
+[00:43:49.502696] Feature usage summary:
+[00:43:49.502696] Genus_Synthesis
+Checking out license: Genus_Synthesis
+
+
+***********************************************************************************************************
+***********************************************************************************************************
+
+
+
+Loading tool scripts...
+Finished loading tool scripts (20 seconds elapsed).
+
+WARNING: This version of the tool is 1429 days old.
+@genus:root: 1> python3 main.py
+@genus:root: 2> nano main.py
+@genus:root: 3> ls
+__pycache__
+generate_genus_tcl.py
+generate_sdc.py
+genus.cmd
+genus.cmd1
+genus.log
+genus.log1
+inputs
+main.py
+outputs
+rtl_source
+runs
+@genus:root: 4> cd runs
+@genus:root: 5> ls
+SPI_Master_1_aggressive_300MHz
+SPI_Master_1_nominal_200MHz
+SPI_Master_1_relaxed_100MHz
+spi_master_2_aggressive_300MHz
+spi_master_2_nominal_200MHz
+spi_master_2_relaxed_100MHz
+spi_master_aggressive_300MHz
+spi_master_nominal_200MHz
+spi_master_relaxed_100MHz
+@genus:root: 6> cd spi_master_2_aggressive_300MHz
+@genus:root: 7> ls
+area.rpt
+check_design.rpt
+constraints.sdc
+fv
+genus.cmd1
+genus.log
+genus.log1
+power.rpt
+qor.rpt
+run_genus.tcl
+synth_netlist.v
+timing.rpt
+@genus:root: 8> nano timing.rpt
