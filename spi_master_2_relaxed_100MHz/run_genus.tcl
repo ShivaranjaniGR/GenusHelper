@@ -1,0 +1,20 @@
+set_db init_lib_search_path {/home/userdata/22bec0985/llm_project/baseline_designs}
+set_db library {/home/userdata/22bec0985/llm_project/baseline_designs/tcbn65gpluswcz_ccs.lib}
+
+read_hdl /home/userdata/22bec0985/GenusHelper/rtl_source/spi_master_2.v
+elaborate spi_master_2
+check_design > check_design.rpt
+
+read_sdc /home/userdata/22bec0985/GenusHelper/runs/spi_master_2_relaxed_100MHz/constraints.sdc
+
+syn_generic
+syn_map
+syn_opt
+
+report_timing > timing.rpt
+report_area > area.rpt
+report_power > power.rpt
+report_qor > qor.rpt
+
+write_hdl > /home/userdata/22bec0985/GenusHelper/runs/spi_master_2_relaxed_100MHz/synth_netlist.v
+exit
