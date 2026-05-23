@@ -1,0 +1,48 @@
+Cadence Genus(TM) Synthesis Solution.
+Copyright 2022 Cadence Design Systems, Inc. All rights reserved worldwide.
+Cadence and the Cadence logo are registered trademarks and Genus is a trademark
+of Cadence Design Systems, Inc. in the United States and other countries.
+
+[02:23:22.400217] Configured Lic search path (21.01-s002): 5280@10.110.5.59
+
+Version: 21.14-s082_1, built Thu Jun 23 02:02:08 PDT 2022
+Options: -files run_genus.tcl 
+Date:    Sat May 23 02:23:22 2026
+Host:    cadence-server.vit.ac.in (x86_64 w/Linux 4.18.0-477.21.1.el8_8.x86_64) (16cores*32cpus*1physical cpu*Intel(R) Xeon(R) Gold 6346 CPU @ 3.10GHz 36864KB) (1055760632KB)
+PID:     1049304
+OS:      Red Hat Enterprise Linux release 8.8 (Ootpa)
+
+
+[02:23:22.363554] Periodic Lic check successful
+[02:23:22.363562] Feature usage summary:
+[02:23:22.363562] Genus_Synthesis
+Checking out license: Genus_Synthesis
+
+
+***********************************************************************************************************
+***********************************************************************************************************
+
+
+
+Loading tool scripts...
+Finished loading tool scripts (20 seconds elapsed).
+
+#@ Processing -files option
+@genus 1> source run_genus.tcl
+#@ Begin verbose source ./run_genus.tcl
+@file(run_genus.tcl) 1: set_db init_lib_search_path {/home/userdata/22bec0985/lm_project/baseline_designs}
+  Setting attribute of root '/': 'init_lib_search_path' = /home/userdata/22bec0985/lm_project/baseline_designs
+@file(run_genus.tcl) 2: set_db library {/home/userdata/22bec0985/lm_project/baseline_designs/tcbn65gpluswc_ccs.lib}
+Error   : File error. [FILE-100] [set_db]
+        : Cannot open file '/home/userdata/22bec0985/lm_project/baseline_designs/tcbn65gpluswc_ccs.lib'. File not found.
+        : Make sure that the file is a readable regular file and has the specified name.
+Error   : A library file does not exist. [LBR-68] [set_db]
+        : File '/home/userdata/22bec0985/lm_project/baseline_designs/tcbn65gpluswc_ccs.lib' could not be found. File '<none>' was the last file that was successfully read in.
+        : Make sure that the library file exists or check for a typo in the file name.
+Error   : The data value for this attribute is invalid. [TUI-24] [set_db]
+        : The value '/home/userdata/22bec0985/lm_project/baseline_designs/tcbn65gpluswc_ccs.lib' cannot be set for attribute 'library'.
+        : To see the usage/description for this attribute, type '::legacy::set_attribute -h <attr_name> *' (in legacy UI mode) or 'help * <attr_name> -detail' (in CUI mode).
+#@ End verbose source ./run_genus.tcl
+1
+Encountered problems processing file: run_genus.tcl
+WARNING: This version of the tool is 1429 days old.

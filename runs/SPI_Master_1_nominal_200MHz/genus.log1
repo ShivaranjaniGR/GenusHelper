@@ -1,0 +1,279 @@
+Cadence Genus(TM) Synthesis Solution.
+Copyright 2022 Cadence Design Systems, Inc. All rights reserved worldwide.
+Cadence and the Cadence logo are registered trademarks and Genus is a trademark
+of Cadence Design Systems, Inc. in the United States and other countries.
+
+[02:40:17.400241] Configured Lic search path (21.01-s002): 5280@10.110.5.59
+
+Version: 21.14-s082_1, built Thu Jun 23 02:02:08 PDT 2022
+Options: -files run_genus.tcl 
+Date:    Sat May 23 02:40:17 2026
+Host:    cadence-server.vit.ac.in (x86_64 w/Linux 4.18.0-477.21.1.el8_8.x86_64) (16cores*32cpus*1physical cpu*Intel(R) Xeon(R) Gold 6346 CPU @ 3.10GHz 36864KB) (1055760632KB)
+PID:     1057518
+OS:      Red Hat Enterprise Linux release 8.8 (Ootpa)
+
+
+[02:40:17.419048] Periodic Lic check successful
+[02:40:17.419050] Feature usage summary:
+[02:40:17.419050] Genus_Synthesis
+Checking out license: Genus_Synthesis
+
+
+***********************************************************************************************************
+***********************************************************************************************************
+
+
+
+Loading tool scripts...
+Finished loading tool scripts (20 seconds elapsed).
+
+#@ Processing -files option
+@genus 1> source run_genus.tcl
+#@ Begin verbose source ./run_genus.tcl
+@file(run_genus.tcl) 1: set_db init_lib_search_path {/home/userdata/22bec0985/llm_project/baseline_designs}
+  Setting attribute of root '/': 'init_lib_search_path' = /home/userdata/22bec0985/llm_project/baseline_designs
+@file(run_genus.tcl) 2: set_db library {/home/userdata/22bec0985/llm_project/baseline_designs/tcbn65gpluswcz_ccs.lib}
+
+Threads Configured:3
+
+  Message Summary for Library tcbn65gpluswcz_ccs.lib:
+  ***************************************************
+  Missing a function attribute in the output pin definition. [LBR-518]: 1
+  An unsupported construct was detected in this library. [LBR-40]: 1
+  ***************************************************
+ 
+Info    : Created nominal operating condition. [LBR-412]
+        : Operating condition '_nominal_' was created for the PVT values (1.000000, 0.900000, 0.000000) in library 'tcbn65gpluswcz_ccs.lib'.
+        : The nominal operating condition is represented, either by the nominal PVT values specified in the library source (via nom_process,nom_voltage and nom_temperature respectively), or by the default PVT values (1.0,1.0,1.0).
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'ANTENNA' must have an output pin.
+        : Add the missing output pin(s), then reload the library. Else the library cell will be marked as timing model i.e. unusable. Timing_model means that the cell does not have any defined function. If there is no output pin, Genus will mark library cell as unusable i.e. the attribute 'usable' will be marked to 'false' on the libcell. Therefore, the cell is not used for mapping and it will not be picked up from the library for synthesis. If you query the attribute 'unusable_reason' on the libcell; result will be: 'Library cell has no output pins.'Note: The message LBR-9 is only for the logical pins and not for the power_ground pins. Genus will depend upon the output function defined in the pin group (output pin) of the cell, to use it for mapping. The pg_pin will not have any function defined.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'ANTENNA' must have an output pin.
+Warning : Unusable clock gating integrated cell found at the time of loading libraries. This warning happens because a particular library cell is defined as 'clock_gating_integrated_cell', but 'dont_use' attribute is defined as true in the liberty library. To make Genus use this cell for clock gating insertion, 'dont_use' attribute should be set to false. [LBR-101]
+        : Clock gating integrated cell name: 'CKLHQD20'
+        : To make the cell usable, change the value of 'dont_use' attribute to false.
+Warning : Unusable clock gating integrated cell found at the time of loading libraries. This warning happens because a particular library cell is defined as 'clock_gating_integrated_cell', but 'dont_use' attribute is defined as true in the liberty library. To make Genus use this cell for clock gating insertion, 'dont_use' attribute should be set to false. [LBR-101]
+        : Clock gating integrated cell name: 'CKLHQD24'
+Warning : Unusable clock gating integrated cell found at the time of loading libraries. This warning happens because a particular library cell is defined as 'clock_gating_integrated_cell', but 'dont_use' attribute is defined as true in the liberty library. To make Genus use this cell for clock gating insertion, 'dont_use' attribute should be set to false. [LBR-101]
+        : Clock gating integrated cell name: 'CKLNQD20'
+Warning : Unusable clock gating integrated cell found at the time of loading libraries. This warning happens because a particular library cell is defined as 'clock_gating_integrated_cell', but 'dont_use' attribute is defined as true in the liberty library. To make Genus use this cell for clock gating insertion, 'dont_use' attribute should be set to false. [LBR-101]
+        : Clock gating integrated cell name: 'CKLNQD24'
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DCAP' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DCAP' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DCAP16' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DCAP16' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DCAP32' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DCAP32' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DCAP4' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DCAP4' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DCAP64' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DCAP64' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DCAP8' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DCAP8' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'GDCAP' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'GDCAP' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'GDCAP10' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'GDCAP10' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'GDCAP2' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'GDCAP2' must have an output pin.
+Warning : Maximum message print count reached. [MESG-11]
+        : Maximum print count of '20' reached for message 'LBR-9'.
+  Setting attribute of root '/': 'library' = /home/userdata/22bec0985/llm_project/baseline_designs/tcbn65gpluswcz_ccs.lib
+@file(run_genus.tcl) 4: read_hdl /home/userdata/22bec0985/GenusHelper/rtl_source/SPI_Master_1.v
+@file(run_genus.tcl) 5: elaborate SPI_Master_1
+  Library has 441 usable logic and 280 usable sequential lib-cells.
+Info    : Elaborating Design. [ELAB-1]
+        : Elaborating top-level block 'SPI_Master_1' from file '/home/userdata/22bec0985/GenusHelper/rtl_source/SPI_Master_1.v'.
+Warning : Using default parameter value for module elaboration. [CDFG-818]
+        : Elaborating block 'SPI_Master_1' with default parameters value.
+Info    : Done Elaborating Design. [ELAB-3]
+        : Done elaborating 'SPI_Master_1'.
+Checking for analog nets...
+Check completed for analog nets.
+Checking for source RTL...
+Check completed for source RTL.
+Running Unified Mux Engine Tricks...
+Completed Unified Mux Engine Tricks
+
+Stage: post_elab
+--------------------------------------------------------
+| Trick             | Accepts | Rejects | Runtime (ms) | 
+--------------------------------------------------------
+| ume_constant_bmux |       0 |       0 |         0.00 | 
+--------------------------------------------------------
+Starting clip mux common data inputs [v1.0] (stage: post_elab, startdef: SPI_Master_1, recur: true)
+Completed clip mux common data inputs (accepts: 1, rejects: 0, runtime: 0.000s)
+Starting clip the non-user hierarchies [v2.0] (stage: post_elab, startdef: SPI_Master_1, recur: true)
+Completed clip the non-user hierarchies (accepts: 0, rejects: 0, runtime: 0.000s)
+
+Stage: post_elab
+---------------------------------------------------------
+| Transform          | Accepts | Rejects | Runtime (ms) | 
+---------------------------------------------------------
+| hlo_clip_mux_input |       1 |       0 |         0.00 | 
+| hlo_clip           |       0 |       0 |         0.00 | 
+---------------------------------------------------------
+UM:   flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
+UM:*                                                                   elaborate
+@file(run_genus.tcl) 6: check_design > check_design.rpt
+
+
+ No LEF file read in.
+@file(run_genus.tcl) 8: read_sdc /home/userdata/22bec0985/GenusHelper/runs/SPI_Master_1_nominal_200MHz/constraints.sdc
+Statistics for commands executed by read_sdc:
+ "create_clock"             - successful      1 , failed      0 (runtime  0.00)
+ "get_clocks"               - successful      4 , failed      0 (runtime  0.00)
+ "get_ports"                - successful      1 , failed      0 (runtime  0.00)
+ "set_clock_latency"        - successful      2 , failed      0 (runtime  0.00)
+ "set_clock_uncertainty"    - successful      2 , failed      0 (runtime  0.00)
+read_sdc completed in 00:00:00 (hh:mm:ss)
+@file(run_genus.tcl) 10: syn_generic
+
+Stage: pre_early_cg
+------------------------------------------------
+| Transform | Accepts | Rejects | Runtime (ms) | 
+------------------------------------------------
+------------------------------------------------
+##Generic Timing Info for library domain: _default_ typical gate delay: 43.4 ps std_slew: 11.4 ps std_load: 2.2 fF
+Starting mux data reorder optimization [v1.0] (stage: pre_to_gen_setup, startdef: SPI_Master_1, recur: true)
+Completed mux data reorder optimization (accepts: 0, rejects: 0, runtime: 0.000s)
+
+Stage: pre_to_gen_setup
+------------------------------------------------------
+| Transform       | Accepts | Rejects | Runtime (ms) | 
+------------------------------------------------------
+| hlo_mux_reorder |       0 |       0 |         0.00 | 
+------------------------------------------------------
+Info    : Synthesizing. [SYNTH-1]
+        : Synthesizing 'SPI_Master_1' to generic gates using 'medium' effort.
+PBS_Generic-Start - Elapsed_Time 0, CPU_Time 0.0
+stamp 'PBS_Generic-Start' being created for table 'pbs_debug'
+
+  Total Time (Wall) |  Stage Time (Wall)  |   % (Wall)   |    Date - Time     |  Memory   | Stage
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+ 00:00:22(00:00:22) |  00:00:00(00:00:00) |   0.0(  0.0) |    2:40:43 (May23) |  442.0 MB | PBS_Generic-Start
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+Number of threads: 8 * 1   (id: pbs_debug, time_info v1.57)
+Info: (*N*) indicates data that was populated from previously saved time_info database
+Info: CPU time includes time of parent + longest thread
+TNS Restructuring config: no_value at stage: generic applied.
+Info    : Partition Based Synthesis execution skipped. [PHYS-752]
+        : Design size is less than the partition size '100000' for distributed generic optimization to kick in.
+Starting mux data reorder optimization [v1.0] (stage: pre_to_gen_setup, startdef: SPI_Master_1, recur: true)
+Completed mux data reorder optimization (accepts: 0, rejects: 0, runtime: 0.001s)
+
+Stage: pre_to_gen_setup
+------------------------------------------------------
+| Transform       | Accepts | Rejects | Runtime (ms) | 
+------------------------------------------------------
+| hlo_mux_reorder |       0 |       0 |         1.00 | 
+------------------------------------------------------
+Starting mux data reorder optimization [v1.0] (stage: post_to_gen_setup, startdef: SPI_Master_1, recur: true)
+Completed mux data reorder optimization (accepts: 0, rejects: 0, runtime: 0.001s)
+
+Stage: post_to_gen_setup
+------------------------------------------------------
+| Transform       | Accepts | Rejects | Runtime (ms) | 
+------------------------------------------------------
+| hlo_mux_reorder |       0 |       0 |         1.00 | 
+------------------------------------------------------
+Running Unified Mux Engine Tricks...
+Completed Unified Mux Engine Tricks
+
+Stage: pre_hlo_rtlopt
+--------------------------------------------
+| Trick | Accepts | Rejects | Runtime (ms) | 
+--------------------------------------------
+--------------------------------------------
+Starting infer macro optimization [v1.0] (stage: pre_rtlopt, startdef: SPI_Master_1, recur: true)
+Completed infer macro optimization (accepts: 0, rejects: 6, runtime: 0.000s)
+Starting decode mux sandwich optimization [v2.0] (stage: pre_rtlopt, startdef: SPI_Master_1, recur: true)
+Completed decode mux sandwich optimization (accepts: 0, rejects: 0, runtime: 0.000s)
+Starting decode mux optimization [v1.0] (stage: pre_rtlopt, startdef: SPI_Master_1, recur: true)
+Completed decode mux optimization (accepts: 0, rejects: 0, runtime: 0.000s)
+Starting chop wide muxes [v1.0] (stage: pre_rtlopt, startdef: SPI_Master_1, recur: true)
+Completed chop wide muxes (accepts: 0, rejects: 0, runtime: 0.000s)
+Starting common data mux cascade opt [v1.0] (stage: pre_rtlopt, startdef: SPI_Master_1, recur: true)
+Completed common data mux cascade opt (accepts: 0, rejects: 0, runtime: 0.000s)
+Starting mux input consolidation [v1.0] (stage: pre_rtlopt, startdef: SPI_Master_1, recur: true)
+Completed mux input consolidation (accepts: 0, rejects: 0, runtime: 0.000s)
+Starting constant-data mux optimization [v1.0] (stage: pre_rtlopt, startdef: SPI_Master_1, recur: true)
+Completed constant-data mux optimization (accepts: 0, rejects: 0, runtime: 0.000s)
+Starting chain-to-tree inequality transform [v2.0] (stage: pre_rtlopt, startdef: SPI_Master_1, recur: true)
+Completed chain-to-tree inequality transform (accepts: 0, rejects: 0, runtime: 0.001s)
+Starting reconvergence optimization [v1.0] (stage: pre_rtlopt, startdef: SPI_Master_1, recur: true)
+Completed reconvergence optimization (accepts: 0, rejects: 0, runtime: 0.000s)
+Starting logic restructure optimization [v1.0] (stage: pre_rtlopt, startdef: SPI_Master_1, recur: true)
+Completed logic restructure optimization (accepts: 0, rejects: 0, runtime: 0.000s)
+Starting common select mux optimization [v1.0] (stage: pre_rtlopt, startdef: SPI_Master_1, recur: true)
+Completed common select mux optimization (accepts: 0, rejects: 1, runtime: 0.000s)
+Starting identity transform [v3.0] (stage: pre_rtlopt, startdef: SPI_Master_1, recur: true)
+Completed identity transform (accepts: 0, rejects: 0, runtime: 0.000s)
+Starting reduce operator chain [v1.0] (stage: pre_rtlopt, startdef: SPI_Master_1, recur: true)
+Completed reduce operator chain (accepts: 0, rejects: 0, runtime: 0.000s)
+Starting common data mux cascade opt [v1.0] (stage: pre_rtlopt, startdef: SPI_Master_1, recur: true)
+Completed common data mux cascade opt (accepts: 0, rejects: 0, runtime: 0.000s)
+Starting mux input consolidation [v1.0] (stage: pre_rtlopt, startdef: SPI_Master_1, recur: true)
+Completed mux input consolidation (accepts: 0, rejects: 0, runtime: 0.000s)
+Starting optimize datapath elements [v1.0] (stage: pre_rtlopt, startdef: SPI_Master_1, recur: true)
+Completed optimize datapath elements (accepts: 0, rejects: 0, runtime: 0.000s)
+Starting datapath recasting [v1.0] (stage: pre_rtlopt, startdef: SPI_Master_1, recur: true)
+Completed datapath recasting (accepts: 0, rejects: 0, runtime: 0.000s)
+Starting clip mux common data inputs [v1.0] (stage: pre_rtlopt, startdef: SPI_Master_1, recur: true)
+Completed clip mux common data inputs (accepts: 0, rejects: 0, runtime: 0.000s)
+Starting clip the non-user hierarchies [v2.0] (stage: pre_rtlopt, startdef: SPI_Master_1, recur: true)
+Completed clip the non-user hierarchies (accepts: 0, rejects: 0, runtime: 0.000s)
+
+Stage: pre_rtlopt
+----------------------------------------------------------------
+| Transform                 | Accepts | Rejects | Runtime (ms) | 
+----------------------------------------------------------------
+| hlo_infer_macro           |       0 |       6 |         0.00 | 
+| hlo_decode_mux_sandwich   |       0 |       0 |         0.00 | 
+| hlo_mux_decode            |       0 |       0 |         0.00 | 
+| hlo_chop_mux              |       0 |       0 |         0.00 | 
+| hlo_mux_cascade_opt       |       0 |       0 |         0.00 | 
+| hlo_mux_consolidation     |       0 |       0 |         0.00 | 
+| hlo_constant_mux_opt      |       0 |       0 |         0.00 | 
+| hlo_inequality_transform  |       0 |       0 |         1.00 | 
+| hlo_reconv_opt            |       0 |       0 |         0.00 | 
+| hlo_restructure           |       0 |       0 |         0.00 | 
+| hlo_common_select_muxopto |       0 |       1 |         0.00 | 
+| hlo_identity_transform    |       0 |       0 |         0.00 | 
+| hlo_reduce_operator_chain |       0 |       0 |         0.00 | 
+| hlo_mux_cascade_opt       |       0 |       0 |         0.00 | 
+| hlo_mux_consolidation     |       0 |       0 |         0.00 | 
+| hlo_optimize_datapath     |       0 |       0 |         0.00 | 
+| hlo_datapath_recast       |       0 |       0 |         0.00 | 
+| hlo_clip_mux_input        |       0 |       0 |         0.00 | 
+| hlo_clip                  |       0 |       0 |         0.00 | 
+----------------------------------------------------------------
+Running Unified Mux Engine Tricks...
+Completed Unified Mux Engine Tricks
+
+Stage: post_hlo_rtlopt
+--------------------------------------------------
+| Trick       | Accepts | Rejects | Runtime (ms) | 
+--------------------------------------------------
+| ume_runtime |       0 |       0 |         0.00 | 
+--------------------------------------------------
+Number of big hc bmuxes before = 0
