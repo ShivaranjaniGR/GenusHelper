@@ -1,5 +1,6 @@
 # GenusHelper: Automated RTL Synthesis and QoR Dashboard
 link to video walkthrough - https://www.youtube.com/watch?v=3chKxKhE2jU
+
 GenusHelper is an automation framework for running Cadence Genus synthesis on multiple RTL design variants and timing constraints. It automatically generates SDC/TCL files, runs synthesis, parses timing/area/power reports, and creates a visual HTML dashboard for QoR comparison.
 
 ## Project Overview
